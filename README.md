@@ -15,7 +15,11 @@ $ irb -r './account.rb'
 2.5.0 :003 > my_account.withdraw(500)
 2.5.0 :004 > my_account.print_statement
 ```
-
+Running the tests:
+```
+$ cd bank_tech_test_makers
+$ rspec
+```
 to be continued...
 
 ## Approach
