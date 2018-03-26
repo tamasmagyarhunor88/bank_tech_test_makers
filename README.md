@@ -8,7 +8,11 @@ This is a simple bank tech test for makers academy to practice our Object Orient
 git clone https://github.com/tamasmagyarhunor88/bank_tech_test_makers.git
 cd bank_tech_test_makers
 bundle install
-ruby bank.rb
+irb -r './account.rb'
+my_account = Account.new
+my_account.deposit(1000)
+my_account.withdraw(500)
+my_account.print_statement
 ```
 
 to be continued...
