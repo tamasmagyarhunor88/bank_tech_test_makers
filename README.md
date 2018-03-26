@@ -10,10 +10,10 @@ $ cd bank_tech_test_makers
 $ bundle install
 $ irb -r './account.rb'
 
-irb> my_account = Account.new
-irb> my_account.deposit(1000)
-irb> my_account.withdraw(500)
-irb> my_account.print_statement
+2.5.0 :001 > my_account = Account.new
+2.5.0 :002 > my_account.deposit(1000)
+2.5.0 :003 > my_account.withdraw(500)
+2.5.0 :004 > my_account.print_statement
 ```
 
 to be continued...
