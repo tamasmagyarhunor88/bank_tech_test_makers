@@ -6,7 +6,7 @@ describe Account do
     @balance = @my_account.balance
   end
 
-  context 'initialize' do
+  context '#initialize' do
     it 'responds to #balance' do
       expect(@my_account).to respond_to(:balance)
     end
@@ -16,7 +16,7 @@ describe Account do
     end
   end
 
-  context 'deposit' do
+  context '#deposit' do
     it 'responds to #deposit' do
       expect(@my_account).to respond_to(:deposit)
     end
@@ -43,6 +43,12 @@ describe Account do
     it 'stores #withdraw transaction log to #logs instance variable' do
       @my_account.withdraw(30)
       expect(@my_account.logs).to include({:time=>"#{Time.now.strftime("%d/%m/%Y")}", :type=>:withdraw, :amount=>30, :actual_balance=>120})
+    end
+  end
+
+  context '#print_statement' do
+    it 'responds to #print_statement' do
+      expect(@my_account).to respond_to(:print_statement)
     end
   end
 

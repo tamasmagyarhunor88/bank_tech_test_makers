@@ -15,4 +15,7 @@ class Account
     @balance -= amount
     @logs << {:time => Time.now.strftime("%d/%m/%Y"), :type => :withdraw, :amount => amount, :actual_balance => @balance}
   end
+
+  def print_statement
+  end
 end
