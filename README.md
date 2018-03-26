@@ -13,6 +13,9 @@ ruby bank.rb
 
 to be continued...
 
+## Approach
+I thought of approaching this tech text using the simplicity pill of the XP values and will only concentrate on what I am asked for. First I created my user stories and set up my project environment. Than I started making the skeleton of my README. Domain modeling gave me a higher level insight about what I'm going to build and what is the next step. The first two user stories were quite easy to reach within one Account class. When I had a look at the 3rd user story I had to consider redesigning my simple application. I considered making separating concerns but I thought at this not very sophisticated stage of my application, I can make a new method in the Account class that can handle printing statements and an new instance variable that can store my transactions log.
+
 ## Requirements
 
 * Account holder should be able to interact with your code via REPL like IRB or PRY.
